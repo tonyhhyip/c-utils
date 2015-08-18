@@ -8,12 +8,12 @@ SRC = list.c
 
 OBJS = $(SRC:.c=.o)
 
-all: $(OBJS)
+all: dir $(OBJS)
 
 dir:
 	mkdir $(ODIR)
 
-clear:
+clean:
 	rm -r $(ODIR)
 
 .c.o:

@@ -16,5 +16,5 @@ dir:
 .c.o:
 	$(CC) $(CFLAGS) -c $< -o $(ODIR)/$@
 
-clear:
+clean:
 	rm -r $(ODIR)
